@@ -60,3 +60,11 @@ alias gcm="git commit -m"
 
 
 
+
+
+
+
+# for nvm: node.js version manager
+source /usr/share/nvm/init-nvm.sh
+
+
