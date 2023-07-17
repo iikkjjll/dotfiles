@@ -14,6 +14,9 @@ These files has included:
 
 - **.xinitrc** ==> this is my X-server read config file when X-server startuptime.
 
+- **.pam_environment** ==> this is my fcitx's environment config file. Copy content of this file to /etc/environment file.
+
+
 
 ## how to restore these files?
 Use `git clone` this repository to `$HOME` directory.
@@ -50,6 +53,17 @@ ln -s "$(echo $HOME)"/dotfiles/.Xmodmap "$(echo $HOME)"/.Xmodmap
 - for **.Xinitrc** ==>
 ```bash
 ln -s "$(echo $HOME)"/dotfiles/.Xinitrc "$(echo $HOME)"/.Xinitrc
+```
+
+- for **.pam_enviroment** ==>
+```bash
+sudo vim /etc/environment 
+
+# then
+:read /home/luck/dotfiles/.pam_enviroment
+
+# then 
+:wq
 ```
 
 
