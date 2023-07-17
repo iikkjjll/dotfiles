@@ -93,3 +93,11 @@ export HISTSIZE=5000
 # export DISPLAY=xsel
 
 
+
+
+[[ -r "/usr/share/z/z.sh" ]] && source /usr/share/z/z.sh
+
+
+
+
+
