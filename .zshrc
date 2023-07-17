@@ -82,3 +82,14 @@ autoload -U compinit && compinit -u
 # for fzf: fuzzy finder
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
+
+
+# export some envs.
+export PATH=$PATH:/home/luck/.local/share/bob/nvim-bin/
+export EDITOR=nvim
+export HISTSIZE=5000
+
+# don't export this variable
+# export DISPLAY=xsel
+
+
