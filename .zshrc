@@ -25,3 +25,28 @@ source /home/luck/.local/share/zap/plugins/fzf-tab/fzf-tab.plugin.zsh
 set -o emacs
 
 
+
+
+
+alias mv="mv -i"
+alias rm="rm -i"
+alias c='clear'
+alias e='exit'
+alias l='ls -lh'
+alias grep='grep --color=auto'
+alias la='ls -a'
+alias ll='ls -alh'
+alias ls='ls --color=auto'
+alias ra="ranger"
+alias t='function _t() { if [ -d "/tmp/test" ]; then cd "/tmp/test"; else mkdir "/tmp/test" && cd "/tmp/test"; fi }; _t'
+alias fq="export https_proxy=http://127.0.0.1:7890;export http_proxy=http://127.0.0.1:7890;export all_proxy=socks5://127.0.0.1:7890"
+alias fqa="export https_proxy=http://127.0.0.1:20171;export http_proxy=http://127.0.0.1:20171;export all_proxy=socks5://127.0.0.1:20170"
+alias v="nvim"
+# alias vi="vim"
+# alias vim="nvim"
+alias mem="sudo ps_mem"
+alias src="source ~/.zshrc"
+alias lg='lazygit'
+alias va="sudo v2raya"
+alias N="nvim ~/.v2raya_nodes_backup.txt"
+alias jo="joshuto"
