@@ -76,3 +76,9 @@ source /usr/share/nvm/init-nvm.sh
 autoload -U compinit && compinit -u
 
 
+
+
+
+# for fzf: fuzzy finder
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
