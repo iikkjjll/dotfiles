@@ -1,47 +1,56 @@
 # My dotfiles backup
 These files are my all **rc files** or **dotfile** in my ArchLinux system.
 
-These files contained: 
-- **picom.conf** ==> is my picom config file.
+These files has included: 
+- **picom.conf** ==> this is my picom config file.
 
-- **.bashrc** ==> is my bash shell config file, it has many alias and envs and so on.
+- **.bashrc** ==> this is my bash shell config file, it has many alias and envs and so on.
 
-- **.zshrc** ==> is my zsh shell config file. 
+- **.zshrc** ==> this is my zsh shell config file. 
 
-- **.vimrc** ==> is my vim config file. This is basic vim config file, not contain any plugin.
+- **.vimrc** ==> this is my vim config file. This is basic vim config file, not contain any plugin.
 
+- **.Xmodmap** ==> this is my keyboard maps.
 
+- **.xinitrc** ==> this is my X-server read config file when X-server startuptime.
 
 
 ## how to restore these files?
+Use `git clone` this repository to `$HOME` directory.
+
 - for **picom.conf** ==>
 ```bash
-ln ~/dotfiles/picom.conf ~/.config/picom/
+ln -s "$(echo $HOME)"/dotfiles/picom.conf "$(echo $HOME)"/.config/picom
 ```
 
 - for **.bashrc** ==>
 ```bash
-ln ~/dotfiles/.bashrc ~/
+ln -s "$(echo $HOME)"/dotfiles/.bashrc "$(echo $HOME)"/.bashrc
 ```
 
 
 - for **.zshrc** ==>
 ```bash
-ln ~/dotfiles/.zshrc ~/
+ln -s "$(echo $HOME)"/dotfiles/.zshrc "$(echo $HOME)"/.zshrc
 ```
 
 
 - for **.vimrc** ==>
 ```bash
-ln ~/dotfiles/.vimrc ~/
+ln -s "$(echo $HOME)"/dotfiles/.vimrc "$(echo $HOME)"/.vimrc
 ```
 
-## where are these files from?
-- **picom.conf** ==> `ln ~/.config/picom/picom.conf ~/dotfiles/`.
-- **.bashrc** ==> `ln ~/.bashrc ~/dotfiles/`.
-- **.zshrc** ==> `ln ~/.zshrc ~/dotfiles/`.
-- **.vimrc** ==> `ln ~/.vimrc ~/dotfiles/`.
 
+- for **.Xmodmap** ==>
+```bash
+ln -s "$(echo $HOME)"/dotfiles/.Xmodmap "$(echo $HOME)"/.Xmodmap 
+```
+
+
+- for **.Xinitrc** ==>
+```bash
+ln -s "$(echo $HOME)"/dotfiles/.Xinitrc "$(echo $HOME)"/.Xinitrc
+```
 
 
 
