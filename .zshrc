@@ -68,3 +68,11 @@ alias gcm="git commit -m"
 source /usr/share/nvm/init-nvm.sh
 
 
+
+
+
+# [[ -s /home/luck/.autojump/etc/profile.d/autojump.sh ]] && source /home/luck/.autojump/etc/profile.d/autojump.sh
+
+autoload -U compinit && compinit -u
+
+
