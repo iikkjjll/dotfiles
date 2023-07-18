@@ -40,7 +40,7 @@ alias ls='ls --color=auto'
 alias ra="ranger"
 alias t='function _t() { if [ -d "/tmp/test" ]; then cd "/tmp/test"; else mkdir "/tmp/test" && cd "/tmp/test"; fi }; _t'
 alias fq="export https_proxy=http://127.0.0.1:7890;export http_proxy=http://127.0.0.1:7890;export all_proxy=socks5://127.0.0.1:7890"
-alias fqa="export https_proxy=http://127.0.0.1:20171;export http_proxy=http://127.0.0.1:20171;export all_proxy=socks5://127.0.0.1:20170"
+alias fqa="export https_proxy=http://127.0.0.1:20172;export http_proxy=http://127.0.0.1:20171;export all_proxy=socks5://127.0.0.1:20170"
 alias v="nvim"
 # alias vi="vim"
 # alias vim="nvim"
