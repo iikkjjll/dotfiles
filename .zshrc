@@ -100,4 +100,9 @@ export HISTSIZE=5000
 
 
 
+if [[ "$TERM" == "linux" ]]; then
+  alias s="startx"
+elif [[ "$TERM" == "st-256color" ]]; then
+  alias s="neofetch"
+fi
 
