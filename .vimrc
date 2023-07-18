@@ -7,6 +7,7 @@ colorscheme elflord
 set background=dark
 
 set history=500
+set timeoutlen=100
 
 filetype indent plugin on
 
@@ -14,7 +15,7 @@ set autoread
 au FocusGained,BufEnter * checktime
 
 set number
-set relativenumber
+"set relativenumber
 
 
 set scrolloff=8
@@ -34,6 +35,8 @@ set t_vb=
 set autochdir
 set noerrorbells
 set novisualbell
+set cursorline
+set colorcolumn=100
 
 set splitbelow
 set splitright
@@ -46,7 +49,10 @@ set tabstop=4
 set shiftwidth=4
 set expandtab
 
-
+" st don't work, but alacritty is ok.
+let &t_SI = "<Esc>]50;CursorShape=1\x7" " 插入模式下光标为竖线 
+let &t_SR = "<Esc>]50;CursorShape=2\x7" " 替换模式下光标为下划线 
+let &t_EI = "<Esc>]50;CursorShape=0\x7"  " 正常模式下光标为方块
 
 
 
@@ -81,7 +87,7 @@ vnoremap <leader>y "+y<ESC>
 
 
 
-highlight DisplayTabAndSpace Ctermbg = cyan
+highlight DisplayTabAndSpace Ctermbg = red
 autocmd InsertEnter,CursorMovedI * match DisplayTabAndSpace /\%.l\%#\@<!\s\+$/
 autocmd InsertLeave * call clearmatches()
 
@@ -106,7 +112,28 @@ nnoremap <silent> <Leader>e :call ToggleSidebar()<CR>
 
 
 
+" to auto switch fcitx input method.
+function! Fcitx2en()
+    let input_status = system('fcitx-remote')
+    if input_status == 2
+        let b:inputtoggle = 1
+        call system('fcitx-remote -c')
+    endif
+endfunction
 
+function! Fcitx2zh()
+    try
+        if b:inputtoggle == 1
+            call system('fcitx-remote -o')
+            let b:inputtoggle = 0
+        endif
+    catch /inputtoggle/
+        let b:inputtoggle = 0
+    endtry
+endfunction
+
+au InsertLeave * call Fcitx2en()
+au InsertEnter * call Fcitx2zh()
 
 
 
