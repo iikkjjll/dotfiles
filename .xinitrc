@@ -40,12 +40,15 @@ feh --bg-fill --randomize /home/luck/pic/*
 
 fcitx &
 numlockx on
+cbatticon &
+clipit &
+nm-applet &
 
 [[ -f ~/.Xmodmap ]] && xmodmap ~/.Xmodmap
 
 xset r rate 160 20
 xinput set-prop 11 183 0
-picom --experimental-backends &
+# picom --experimental-backends &
 
 exec dwm
 
