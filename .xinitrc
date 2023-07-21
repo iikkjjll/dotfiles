@@ -50,6 +50,8 @@ xset r rate 160 20
 xinput set-prop 11 183 0
 # picom --experimental-backends &
 
+exec slstatus &
+
 exec dwm
 
 # twm &
