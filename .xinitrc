@@ -36,18 +36,19 @@ if [ -d /etc/X11/xinit/xinitrc.d ]; then
 	unset f
 fi
 
-# feh --bg-fill --randomize /home/luck/pic/*
+feh --bg-fill --randomize /home/luck/pic/*
 
 # fcitx &
-# numlockx on
+numlockx on
 # cbatticon &
-# clipit &
+clipit &
 # nm-applet &
 
-# [[ -f ~/.Xmodmap ]] && xmodmap ~/.Xmodmap
+[[ -f ~/.Xmodmap ]] && xmodmap ~/.Xmodmap
+xset r rate 160 20
 
-# xset r rate 160 20
-# xinput set-prop 11 183 0
+xinput set-prop 11 183 0
+
 # picom --experimental-backends &
 
 exec slstatus &
