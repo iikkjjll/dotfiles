@@ -49,7 +49,7 @@ alias src="source ~/.zshrc"
 alias lg='lazygit'
 alias va="sudo v2raya"
 alias N="nvim ~/.v2raya_nodes_backup.txt"
-alias jo="joshuto"
+# alias jo="joshuto"
 alias cat="bat"
 
 # alias for git
