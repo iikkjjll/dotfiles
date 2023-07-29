@@ -50,7 +50,7 @@ alias lg='lazygit'
 alias va="sudo v2raya"
 alias N="nvim ~/.v2raya_nodes_backup.txt"
 # alias jo="joshuto"
-alias cat="bat"
+# alias cat="bat"
 
 # alias for git
 alias gst="git status"
@@ -59,6 +59,14 @@ alias gaa="git add ."
 alias glog="git log --oneline"
 alias gcm="git commit -m"
 
+# navigation quickly
+alias god="cd ~/app/dwm"
+alias gost="cd ~/app/st"
+alias gosl="cd ~/app/slstatus"
+alias gon="cd ~/notes"
+alias gov="cd ~/.config/nvim"
+alias gojo="cd ~/.config/joshuto"
+alias godo="cd ~/dotfiles"
 
 
 
