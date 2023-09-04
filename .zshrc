@@ -61,6 +61,8 @@ alias gcm="git commit -m"
 
 # navigation quickly
 alias god="cd ~/app/dwm"
+alias goc="cd ~/.config"
+alias goco="cd ~/codes"
 alias gost="cd ~/app/st"
 alias gosl="cd ~/app/slstatus"
 alias gon="cd ~/notes"
